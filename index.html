@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <title>html + css</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <a href="#">saltar contenido</a>
+    <header class="site-header">
+        <nav arial-label="navegacion principal">
+            <lu class="nav">
+                <li><a href="#texto"></a></li>
+                <li><a href="#listas"></a></li>
+                <li><a href="#multimedia"></a></li>
+                <li><a href="#tablas"></a></li>
+                <li><a href="#semantica"></a></li>
+            </lu>
+        </nav>
+        <!-- main: va el contenido de la pagina principal -->
+        <main class="container" id="contenidoo">
+            <section class="card" id="texto">
+                <h2>1 Texto y estructura</h2>
+                  <!-- article es auna etiqueta que nos ayuda para escribir articulos -->
+                <article>
+                    <h3>Encabezados</h3>
+                    <!-- strong es para que coloque las letras en negrilla  -->
+
+                    <p>Esto es un párrafo con <strong>strong</strong>, <em>cursiva</em>, <mark>marcador</mark>, <u>subtaya</u> y
+                        <code>code</code>.</p>
+
+                    <p>
+                        <!-- etiqueta a es para enlaces - etiqueta abbr explicacion de texto -->
+                        Un enlace: <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web
+                            Docs</a>.
+                        Un <abbr title="HyperText Markup Language">HTML</abbr> bien usado es oro.
+                    </p>
+                    <!-- blockquote para sangria mover el texto -->
+                    <blockquote cite="https://developer.mozilla.org/">
+                        “La web se construye mejor cuando el HTML tiene significado.”
+                    </blockquote>
+
+                    <p>
+                        Texto pequeño: <small>esto es una nota al pie mental.</small>
+                    </p>
+
+                    <p>
+                        Superíndice y subíndice: H<sub>2</sub>O y 2<sup>10</sup>.
+                    </p>
+
+                    <hr />
+
+                    <h3>Detalles expandibles</h3>
+                    <details>
+                        <!-- summary para que se nos desprenda un acordion -->
+                        <summary>Abre para ver un tip</summary>
+                        <p>Usa etiquetas semánticas: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>,
+                            <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>… tu yo del futuro te lo agradece.
+                        </p>
+                    </details>
+
+                    <h3>Preformateado</h3>
+                    <pre><code>function holaMundo() {
+  console.log("Hola, GitHub!");
+}</code></pre>
+                </article>
+            </section>
+            <section class="card" id="listas">
+                <h2>2. listas</h2>
+                <div class="grid">
+                    <h3>listas no ordenadas</h3>
+                    <ul>
+                        <li>pan</li>
+                        <li>cafe</li>
+                        <li>paciencia con HTML</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>lista Ordenadas</h3>
+                    <ol>
+                        <li>clonar repo</li>
+                        <li>Editar</li>
+                        <li>comint</li>
+                        <li>push</li>
+                    </ol>
+                </div>
+
+            </section>
+            <section class="card" id="multiumedia">
+                <h2>3. multimedia</h2>
+                <!-- loading="lazy" para optimizar las imagenes en la pagina web -->
+                <img src="https://preview.redd.it/kawasaki-z1000-v0-4arjyveoc1ma1.jpg?auto=webp&s=48d9c2ca5619b0c2deba4964d18b0faca4303214" alt="imagen de ejemplo aleatorio" loading="lazy">
+             
+            </section>
+            
+        </main>
+
+        <!-- Contenedor -->
+        <div class="container">
+            <!-- etuiqueta de texto  -->
+            <H1>HTML</H1>
+            <h2>prueba</h2>
+            <h3> texto coto </h3>
+            <h4> mas pequeña la letra </h4>
+            <p>parrafos larfgos </p>
+
+        </div>
+
+    </header>
 </body>
+
 </html>
