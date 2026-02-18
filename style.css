@@ -1,0 +1,42 @@
+:root{
+    --bg: #ff0000;
+    --card: rgb(30, 77, 207);
+    --text: white;
+    --muted: #2b925e;
+    --border:rgba(243, 163, 219, 0.685);
+    --radius:16px;
+}
+
+    *{ box-sizing: border-box; }
+html, body{ height: 100%; }
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(124,77,255,.25), transparent),
+              radial-gradient(900px 500px at 90% 0%, rgba(0,200,255,.18), transparent),
+              var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+/* 3) Utilidades */
+.container{
+  width: min(1050px, 92%);
+  margin: 0 auto;
+}
+.skip-link{
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background: white;
+  color: black;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.skip-link:focus{ left: 10px; }
+
+a{ color: inherit; }
+code{
+  background: rgba(255,255,255,.08);
+  padding: 2px 6px;
+  border-radius: 8px;
+}
